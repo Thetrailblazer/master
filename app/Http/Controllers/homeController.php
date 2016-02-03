@@ -47,9 +47,16 @@ class homeController extends Controller
     }
 
     // would like to make a function which creates and image object with copy and locatiom
-    // so i need to make a model?
-    public function SendEmail()
+    
+    public function SendEmail(Request $request)
     {
-    	// ugh. want mykes help
+    	$input = $request->input();
+
+  //   	$data = [
+		//     'success': true,
+		//     'message': 'Your AJAX processed correctly'
+		// ];
+
+    	return response()->json($input);
     }
 }

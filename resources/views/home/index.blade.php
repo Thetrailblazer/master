@@ -53,7 +53,7 @@
             <h3>Barbel Run - 2016</h3>
             <ul class="text-left">
                 <lh><b>Travel to the tigers</b></lh>
-                <li>Fly from Springfield, United States (US) to Johannesburg, South Africa (ZA) October 14th (2pm departure) - October 15th (530pm arrival)</li>
+                <li>From your home into Altlanta georgia, United States (US) to Johannesburg, South Africa (ZA) October 14th (2pm departure) - October 15th (530pm arrival)</li>
                 <li>Ground transportation from airport to hotel October 15th (7pm)</li>
                 <li>Hotel accommodations on October 15th. Dinner is open for the traveler.</li>
                 <li>Ground transportation from hotel to airport on October 16th (830am)</li>
@@ -271,23 +271,23 @@
             <p>So drop us a line, send us an adventure, or request a quote and let the fish story become a reality!
         </div>
     </div>
+    <p>&nbsp;</p>
     <!-- /.col-md-12 -->
-<p><hr></p>
+
     <div class="contact-form">
         <div class="row">
-
-            <form action="/" method="post">
+            <form action="/" method="post" id="contact">
                 <fieldset class="col-md-4">
-                    <input id="name" type="text" name="name" placeholder="Name">
+                    <input id="name" type="text" name="name" placeholder="Name" required>
                 </fieldset>
                 <fieldset class="col-md-4">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </fieldset>
                 <fieldset class="col-md-4">
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 </fieldset>
                 <fieldset class="col-md-12">
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
                 </fieldset>
                 <fieldset class="col-md-12">
                     <input type="submit" name="send" value="Send Message" id="submit" class="button">
@@ -295,15 +295,55 @@
             </form>
         </div> <!-- /.row -->
     </div> <!-- /.contact-form -->
+    <div class="alert alert-danger text-center hidden" id="error">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+            Our Email system is down. Please either send an email to the current Trailblazer - <a href="mailto:daverowett@gmail.com">Dave Rowett</a> or <a href="mailto:thetrailblazer.xyz@gmail.com">irectly to us</a>!
+    </div>
+    <div class="alert alert-success text-center hidden" id="success">
+        <span class="glyphicon" aria-hidden="true"></span>
+        <span class="sr-only">Sucess:</span>
+            Your request has been successfully sent
+    </div>
 </div> <!-- /.col-md-12 -->
-<div class="toggle-content text-center" id="tab12">
-    <h3>Trailblazer</h3>
-    <p>This is our introduction to me</p>
-    Partner map here.
-    <ul>thetrailblazer.xyz@gmail.com
-            <lh>Partners</lh>
-            <li><strong>Email:</strong>  jims@plateauflyshop.com | <strong>Tel:</strong> 417 848-3155</p></li>
-        </ul>
+<div class=" text-center" id="tab12">
+    <div class="col-md-4 col-sm-4">
+        <div class="member-item">
+            <div class="thumb">
+                <img src="images/info/dave_and_plane.jpg" alt="Trailblazer - Dave Rowett">
+            </div>
+            <h4>Trailblazer</h4>
+            <span>Dave Rowett</span>
+            <p class="text-left"><b>Dave</b> started out early, learning to fish with his grandfather, and became steeped in fly fishing tradition. 
+                Wither it is native brook trout in NJ’s Delaware Water Gap, 
+                steelhead in one of Lake Ontario tributaries or 
+                small mouth in MO on the Finley River, Dave absorbs his environment, learns, and finds the fish. 
+                He has recently returned from Africa, with plans to learn and experience all he can about that continents indigenous fisheries and people.
+                
+                </br></br><b>Favories:</b> Mexico coast following snook, barracuda, and bonefish, Florida panhandle for mackerel, redfish and pompano Okavango Delta barbel run for tigerfish.</P>
+            
+            <p class="text-left"><strong>Phone:</strong> (417) 848-3155
+            </br><strong>Email:</strong> <a href="mailto:daverowett@gmail.com">daverowett@gmail.com</a></p>
+            
+        </div> <!-- /.member-item -->
+    </div> <!-- /.col-md-4 -->
+    <div class="col-md-4 col-sm-4">
+        <div class="member-item">
+            <div class="thumb">
+                <a href="http://plateauflyshop.com" target="_new"><img src="images/Info/plateau_fly_shop.png" alt="Partner - Plateau Fly Shop"></a>
+            </div>
+            <h4>Partner</h4>
+            <span>Plateau Flyshop</span>
+            <p class="text-left"><b>Plateau Fly Shop</b> is centrally located on the Ozark Plateau in Springfield, Missouri. Our location allows us to fish amazing waterways for rainbow and brown trout, smallmouth bass, largemouth bass, kentuckies, white bass, hybrid striped bass, striped bass, musky, carp, gar….<p>
+            <p class="text-left">We are dedicated fishermen who will provide all level of fly fishers the highest quality fly gear, service and advice.  If you’re planning a trip to the area and don’t have the time to stop by, give us a call or email and we’ll fill you in where the fishing is best.</p>
+            <p class="text-left"><strong>Contact</strong> Jim Stouffer
+            </br><strong>Address:</strong> 2863 S Campbell Ave, 
+            </br> - Springfield, MO 65807
+            </br><strong>Phone:</strong> (417) 889-6548
+            </br><strong>Email:</strong> <a href="mailto:jims@plateauflyshop.com">jims@plateauflyshop.com</a></p>
+        </div> <!-- /.member-item -->
+    </div> <!-- /.col-md-4 -->
+       
 </div> <!-- /.col-md-12 -->
 
 

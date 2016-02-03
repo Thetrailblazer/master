@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::post('/', 'HomeController@sendEmail');
+Route::post('/sendemail', 'HomeController@sendEmail');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

@@ -11,8 +11,25 @@
 		return false;
     });
 
+	$("#contact").submit(function( event ) {
+ 		 $.ajax({
 
+         type:"POST",
+         url:'/sendEmail',
+         data:$(this).serialize(),
+         dataType: 'json',
+         success: function(data){
 
+   				$('#success').removeClass("hidden");
+         },
+         error: function(data){
+         	console.log("error");
+         	$('#error').removeClass("hidden");
+         }
+    });
+
+  		event.preventDefault();
+	});
 
     /************** Open Different Pages *********************/
 	$(".menu a").click(function(){
