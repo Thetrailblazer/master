@@ -330,7 +330,7 @@
     <div class="col-md-4 col-sm-4">
         <div class="member-item">
             <div class="thumb">
-                <a href="http://plateauflyshop.com" target="_new"><img src="images/Info/plateau_fly_shop.png" alt="Partner - Plateau Fly Shop"></a>
+                <a href="http://plateauflyshop.com" target="_new"><img src="images/info/plateau_fly_shop.png" alt="Partner - Plateau Fly Shop"></a>
             </div>
             <h4>Partner</h4>
             <span>Plateau Flyshop</span>
