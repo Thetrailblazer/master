@@ -15,15 +15,13 @@
  		 $.ajax({
 
          type:"POST",
-         url:'/sendEmail',
+         url:'/sendemail',
          data:$(this).serialize(),
          dataType: 'json',
          success: function(data){
-
-   				$('#success').removeClass("hidden");
+			$('#success').removeClass("hidden");
          },
          error: function(data){
-         	console.log("error");
          	$('#error').removeClass("hidden");
          }
     });

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -52,10 +52,17 @@ class homeController extends Controller
     {
     	$input = $request->input();
 
-  //   	$data = [
-		//     'success': true,
-		//     'message': 'Your AJAX processed correctly'
-		// ];
+  //   	
+
+	   	Mail::send('emails.contact', "$input", function ($message) {
+   			$message->from('TheTrailblazer.xyz@gmail.com', 'Contact');
+		    $message->to('TheTrailblazer.xyz@gmail.com')->subject('Contact Request!!!');
+		});
+
+		// $data = [
+		//      'success': true,
+		//      'message': 'Your AJAX processed correctly';
+		//  ];
 
     	return response()->json($input);
     }

@@ -21,13 +21,13 @@
 <div class="col-md-12 col-sm-12">
     <div class="toggle-content text-center" id="tab1">
         <h3>Botswana - The Okavango Delta</h3>
-        <div class="text-left">
-            "One of the most sought after wilderness destinations in the world, the Okavango Delta gives entrance to the spectacle of wild Africa such as dreams are made of – the heart-stopping excitement of big game viewing, the supreme tranquility and serenity of an untouched delta, and evocative scenes of extraordinary natural beauty.
+        <img class="col-md-4 col-sm-4" src="images/info/map-botswana.png" alt="Botawana" />
+        <div class="text-left">"One of the most sought after wilderness destinations in the world, the Okavango Delta gives entrance to the spectacle of wild Africa such as dreams are made of – the heart-stopping excitement of big game viewing, the supreme tranquility and serenity of an untouched delta, and evocative scenes of extraordinary natural beauty.
             <p>A journey to the Okavango Delta – deep into Africa’s untouched interior – is like no other. Moving from wetland to dryland – traversing the meandering palm and papyrus fringed waterways, passing palm-fringed islands, and thick woodland, resplendent with lush vegetation, and rich in wildlife – reveals the many facets of this unique ecosystem, the largest intact inland delta in the world.</p>
             <p>The Okavango Delta is situated deep within the Kalahari Basin, and is often referred to as the ‘jewel’ of the Kalahari.
             That the Okavango exists at all – deep within this thirstland – seems remarkable. Shaped like a fan, the Delta is fed by the Okavango River, the third largest in southern Africa. It has been steadily developed over the millennia by millions of tonnes of sand carried down the river from Angola."
             </br>- <a href="http://www.botswanatourism.co.bw/destination/okavango-delta" target="_new">Botswana Tourism</a></p>
-
+            
             <p>The scale and magnificence of the Okavango Delta helped it secure a position as one of the 
                 <a href="http://sevennaturalwonders.org/okavango-delta/" target="_new">Seven 
                 Natural Wonders of Africa </a>, which were officially declared on February 11, 2013 and on 22 June 2014, 
@@ -38,17 +38,18 @@
 
     <div class="toggle-content text-center" id="tab2">
         <h3>Tigerfish - Hydrocynus Alestidae</h3>
+        <img class="col-md-6 col-sm-6" src="images/info/tigerfish.png" alt="Tigerfish" />
         <div class="text-left">
             "The tigerfish is a fierce and wily creature that demands respect from all forms of life that may happen across its path and is regarded by majority as being the best freshwater game fish in Africa.</p>
             <P>The tigerfish is best described by its Latin scientific name Hydrocynus vittatus which when translated means “Striped Water dog” - a most fitting description indeed.
             <P>The tigerfish has a blue-silver fusiform shaped body with red & yellow pointed fins which have black trailing edges. The head is large with extremely bony cheeks and jaws. The 8 teeth per jaw are conical & extremely sharp and are used more for grasping prey than tearing bits of flesh from it. 
-                These teeth are replaced at intervals throughout the tigerfish’s life. Males and females are similar in form and coloring but males are generally smaller." - <a href="http://www.tigerfishfrenzy.com/4tigerfish.htm" target="_new">tigerfishfrenzy.com</a></p>
+                These teeth are replaced at intervals throughout the tigerfish’s life. Males and females are similar in form and coloring but males are generally smaller."
+            </br>- <a href="http://www.tigerfishfrenzy.com/4tigerfish.htm" target="_new">tigerfishfrenzy.com</a></p>
             <p>These fish are fierce hunters and are mostly piscivorous and tend to eat whatever fish is most available, but tigers have also been observed jumping out of the water and catching barn swallows on the wing as they fly near the surface feeding on insects.</p>
         </div>
     </div> 
 
     <div class="col-md-12 col-sm-12 text-center" id="tab3">
-
         <div class="row member-item">
             <h3>Barbel Run - 2016</h3>
             <ul class="text-left">
@@ -101,12 +102,13 @@
 <div class="col-md-12 col-sm-12">
     <div class="toggle-content text-center" id="tab4">
         <h3>nXamaseri</h3>
+        <img class="col-md-3 col-sm-3" src="images/info/Nxamaseri-chalet1.jpg" alt="Chalet - nXamaseri" />
         <div class="text-left">
             <b>Enjoy a unique island experience in the permanent waters of the spectacular Okavango Delta.</b>
             <p>"A small, exclusive lodge, and one of the oldest in the delta, it has seven double en-suite chalets, each secluded in indigenous forest and each with a private deck overlooking the water. Teak walkways link the rooms to the main area of the lodge.</P>
             <p>The lodge is designed to show off the areas breathtaking scenery. With decor handcrafted by local artisans and original Botswana artwork, its rustic natural charm is enhanced by the warm hospitality of our hosts. Owner-run, and focusing on personalised attention, Nxamaseri is an intimate way to experience the peaceful beauty of the Okavango delta." - <a href="http://www.nxamaseri.com/" target="_new">nXamaseri</a></P>
-            
         </div>
+
     </div>
     <div class="toggle-content text-center" id="tab5">
         <h3>Amenities</h3>
@@ -131,11 +133,11 @@
                 <li>The booze and fuel can be included in a package for guests at a nominal fee.</li>
                 <li>Single occupancy huts or boats are possible for an up charge.</li>
             </ul>
- 
         </div>
     </div>
     <div class="toggle-content text-center" id="tab6">
         <h3>Daily Routine</h3>
+        <img class="col-md-4 col-sm-4" src="images/gallery/lodge.jpg" alt="nXamaseri - Lodge" />
         <div class="text-left">
             On the <b>October 16th</b>, the day we arrive fishing is optional, but you could be on the river ASAP chasing the run. Or you could grab some refreshments and relax till dinner. It is all up to you.
             <p><b>October 17th - 20th</b>, Sunrise happens at 5:30am and as soon as it is light you can get on the water. Coffee, tea and biscuits are available, but Breakfast is around 6am.
@@ -232,15 +234,13 @@
 </div>
 @stop
 
-<!-- http://wwwnc.cdc.gov/travel/destinations/traveler/none/botswana -->
-
 @section('gallery')
 		@foreach($images as $image)
         	<div class="col-md-3 col-md-4 col-md-6">
             	<div class="g-item">
                 	<img src="images/gallery/{{ $image }}" alt="">
                 	<a data-rel="lightbox" class="overlay" href="images/gallery/{{ $image }}">
-	                    <span>+</span>
+	                    <span><i class="fa fa-expand"></i></span>
     	            </a>
         	    </div>
         	</div>
@@ -298,7 +298,7 @@
     <div class="alert alert-danger text-center hidden" id="error">
         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
         <span class="sr-only">Error:</span>
-            Our Email system is down. Please either send an email to the current Trailblazer - <a href="mailto:daverowett@gmail.com">Dave Rowett</a> or <a href="mailto:thetrailblazer.xyz@gmail.com">irectly to us</a>!
+            Our Email system is down. Please either send an email to the current Trailblazer - <a href="mailto:daverowett@gmail.com">Dave Rowett</a> or <a href="mailto:thetrailblazer.xyz@gmail.com">Directly to us</a>!
     </div>
     <div class="alert alert-success text-center hidden" id="success">
         <span class="glyphicon" aria-hidden="true"></span>

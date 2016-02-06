@@ -26,7 +26,7 @@
     <![endif]-->
 
     
-    <div class="bg-overlay"></div>
+    
 
     <div class="container-fluid">
         <div class="row">
